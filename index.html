@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header{
+            background-color: blue;
+            color: blanchedalmond;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 10px  solid rgb(190, 27, 84) ;
+        }
+        main{
+            background-color: rgb(241, 241, 249);
+            color: rgb(66, 11, 234);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+        }
+        img{
+            width: 200px;
+            height: auto;
+        }
+      .artigo-autor {
+font-weight: bold;
+}
+
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Memórias do bebê Bili</h1>
+        <p>Por: Fernanda Cardoso</p>
+        <p>Estarei compartilhando lembranças eternas daquele que sempre me amou incondicionalmente</p>
+    </header>
+    <main>
+        <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/499659642_9957708700992439_400951196797590530_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x1536&ctp=s1536x1536&_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=yJ1HLGqKUGQQ7kNvwGe2qJM&_nc_oc=AdoMnG29FZPPtN67BJDSNzxZf8w0lKYOaEP-gsIdp-TttHiQVYiXJBkp380r2y3GK7o&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=Ye8kpOHtj4FlCzcgJzN4GA&_nc_ss=7b2a8&oh=00_AQOlu2haOFEchsnifXGxAvta3U4jx5vFW-Htkc6OQrX7Pw&oe=6AC4D11A&quot; alt="foto do bb">
+    <div>
+        <h2>Agosto 2012 a outubro 2025</h2>
+        <p>Quase 1 ano sem ele mas o <strong>amor</strong> ainda moro comigo</p>
+        <p>A saudade é algo que dói mas que a gente aprende a viver com ela</p>
+        <p class="artigo-autor">Me siga no <a href="https://www.facebook.com/fernanda.cardoso.3745?locale=pt_BR">Facebook</a></p&gt;
+    <button>❤️ <span>0</span></button>
+    </div>
+       
+        </main>
+</body>
+<script>
+    const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+console.log("fui clicado");
+
+let texto = botao.querySelector("span");
+texto.textContent++;
+
+}
+</script>
+</html>
